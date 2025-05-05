@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $stmt->store_result();
-    
+    //ss
     if ($stmt->num_rows > 0) {
         $stmt->bind_result($id, $db_username, $db_password, $db_role);
         $stmt->fetch();
